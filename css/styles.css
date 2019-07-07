@@ -195,3 +195,92 @@ figure {
 .about > p {
   margin: 0;
 }
+
+
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: red;
+  }
+
+  /* Nav bar move to fixed on left side. */
+  .site-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    width: 100px;
+    height: 100%;
+      z-index: 100;
+      background-color: #ffffff;
+      background-color: cyan;
+  }
+
+  .site-nav-list {
+    margin-top: 100px;
+  }
+
+  .site-nav-item {
+    float: none;
+  }
+
+  /* Logo within sidebar instead of on its own */
+  .site-logo {
+    z-index: 199;
+  }
+
+
+
+
+  /* Film overviews should be visible */
+
+  .movie-overview {
+    display: inline;
+  }
+
+
+  /* Footer should be side by side instead of stacked. */
+
+  /* footer should have black background & white text */
+
+  .site-footer {
+    /* width: 100%; */
+    background: #000;
+    color: #FFF;
+  }
+
+  .footer-nav {
+    width: 1fr;
+    display: inline-block;
+  }
+
+  .about {
+    width: 1fr;
+    display: inline-block;
+    background-color: #000;
+  }
+
+  .about p {
+    display: inline;
+  }
+
+}
+
+
+
+
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: blue;
+  }
+
+  /* Show all posters except the first one. */
+
+  /* Movie overviews hidden except the first one */
+
+  /* Movies should be laid in a 3-column grid, except the first one */
+
+  /* Use the first-child CSS psuedo selector */
+}
+
+
